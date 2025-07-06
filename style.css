@@ -120,7 +120,7 @@ header {
 }
 
 .fade-in {
-    animation: fadeIn 1s ease-in;
+    animation: fadeIn 2s ease-in;
 }
 
 .card {
@@ -128,8 +128,8 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 400px;
-    height: 250px;
+    width: clamp(200px, 25vw, 600px);
+    height: 15.625rem;
     margin-left: 2.5rem;
     margin-bottom: 2.5rem;
     border: 1px solid black;
@@ -183,7 +183,7 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: var(--footer-bg-color);
-    height: 50px;
+    height: 3.125rem;
 }
 
 @media (max-width: 600px) {
@@ -211,7 +211,7 @@ footer {
         margin-bottom: 20px;
     }
     .card {
-        width: 250px;
+        width: 15.625rem;
         margin: auto;
         margin-top: 20px;
         margin-bottom: 20px;
