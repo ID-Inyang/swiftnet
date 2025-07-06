@@ -1,0 +1,217 @@
+/* IDONGESIT INYANG (WD) 06-JULY-2025 */
+* {
+    margin: 0;
+    
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+:root {
+    --bg-primary-color: rgba(0, 139, 86, 0.89);
+    --bg-secondary-color: rgba(0, 0, 0, 0.589);
+}
+
+@keyframes fadeIn {
+    0% {
+    opacity: 0;
+   }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-50px);
+    }
+  }
+
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.1);
+      opacity: 0.7;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+header {
+    display: flex;
+    background: var(--bg-primary-color);
+    color: white;
+    justify-content: space-between;
+}
+
+.links {
+    display: flex;
+    gap: 1rem;
+    justify-content: end;
+    align-items: center;
+    margin-right: 0.625rem;
+}
+
+.links > a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: large;
+}
+
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    text-align: center;
+    background-image: linear-gradient(to bottom, var(--bg-primary-color), var(--bg-secondary-color));
+    padding: auto;
+    top: 4rem;
+    color: whitesmoke;
+}
+
+ .hero button {
+    color: white;
+    background-color: rgb(53, 130, 197);
+    transition: background-color 1s ease;
+ }
+
+ .hero button:hover {
+    background-color: blueviolet;
+    transform: scale(1.2);
+ }
+
+.hero h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem;
+    margin-bottom: 1.4rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.description {
+    width: 70vw;
+    margin: auto;
+    flex-wrap: wrap;
+    line-height: 1.4;
+    font-size: large;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-image: linear-gradient(to bottom, var(--bg-secondary-color), var(--bg-primary-color));
+    justify-content: center;
+    align-items: center; 
+    margin: auto;
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 250px;
+    margin-left: 2.5rem;
+    margin-bottom: 2.5rem;
+    border: 1px solid black;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.849);
+    border-radius: 10px;
+    border: none;
+    padding: 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.53);
+}
+
+h3 {
+    font-size: 34px;
+}
+
+.more-details-btn {
+    animation: pulse 1s ease-in-out infinite;
+}
+
+
+.card button {
+    margin-top: 40px;
+}
+
+button {
+    height: 2.5rem;
+    width: 8.75rem;
+    font-size: 14.2px;
+    font-weight: bold;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(0, 255, 157);
+    cursor: pointer;
+}
+
+.card-description {
+    padding-top: 30px;
+    font-size: large;
+}
+
+footer {
+    --footer-bg-color:rgba(12, 143, 143, 0.336);
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    background-color: var(--footer-bg-color);
+    height: 50px;
+}
+
+@media (max-width: 600px) {
+    .cards-container {
+        flex-direction: column;
+        flex-wrap: wrap;
+
+    }
+
+   header {
+        flex-direction: column;
+    }
+    .links
+    {
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+
+    main {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 300px;
+    }
+
+    .card:hover {
+        transform: scale(1.1);
+    }
+}
