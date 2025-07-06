@@ -147,7 +147,7 @@ header {
 }
 
 h3 {
-    font-size: 34px;
+    font-size: 23px;
 }
 
 .more-details-btn {
@@ -190,7 +190,6 @@ footer {
     .cards-container {
         flex-direction: column;
         flex-wrap: wrap;
-
     }
 
    header {
